@@ -24,8 +24,7 @@ COPY startup.sh /
 
 VOLUME ["/dashboards", "/jobs", "/lib-smashing", "/config", "/public", "/widgets", "/assets"]
 
-ENV PORT 3030
-EXPOSE $PORT
+EXPOSE 3030
 WORKDIR /smashing
 
 CMD ["/startup.sh"]
